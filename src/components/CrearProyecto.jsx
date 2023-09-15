@@ -12,68 +12,67 @@ const CrearProyecto = () => {
     const [repositorio, setRepositorio] = useState("")
     const [colaboradores, setColaboradores] = useState("")
     const [tecnologias, setTecnologias] = useState("")
-    
     const navigate = useNavigate()
 
     const store = async (e) => {
         e.preventDefault();
         await axios.post(url, {
-            nombre: nombre,
+            name: nombre,
             description: descripcion, 
             img: img,
             repositorio: repositorio, 
-            colaboradores: colaboradores,
-            tecnologias: tecnologias,
+            collaboradores: colaboradores,
+            technologias: tecnologias,
         })
         navigate("/")
-    }   
+    } 
 
 return (
     <div>
         <h3>Create</h3>
         <form onSubmit={store}>
-            <div className='mb-3'>
-                <label className='form-label'>nombre</label>
+            <div>
+                <label>nombre</label>
                 <input 
                     type="text"
                     value={nombre}
                     onChange={(e) => setNombre(e.target.value)}
                 />
             </div>
-            <div className='mb-3'>
-                <label className='form-label'>descripcion</label>
+            <div>
+                <label>descripcion</label>
                 <textarea 
                     type="text"
                     value={descripcion}
                     onChange={(e) => setDescripcion(e.target.value)}
                 />
             </div>
-            <div className='mb-3'>
-                <label className='form-label'>img</label>
+            <div>
+                <label>img</label>
                 <input 
                     type="text"
                     value={img}
                     onChange={(e) => setImg(e.target.value)}
                 />
             </div>
-            <div className='mb-3'>
-                <label className='form-label'>repositorio</label>
+            <div>
+                <label>repositorio</label>
                 <textarea 
                     type="text"
                     value={repositorio}
                     onChange={(e) => setRepositorio(e.target.value)}
                 />
             </div>
-            <div className='mb-3'>
-                <label className='form-label'>colaboradores</label>
+            <div>
+                <label>colaboradores</label>
                 <textarea 
                     type="text"
                     value={colaboradores}
                     onChange={(e) => setColaboradores(e.target.value)}
                 />
             </div>
-            <div className='mb-3'>
-                <label className='form-label'>tecnologias</label>
+            <div>
+                <label>tecnologias</label>
                 <textarea 
                     type="text"
                     value={tecnologias}

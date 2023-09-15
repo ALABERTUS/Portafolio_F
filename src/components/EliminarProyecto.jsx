@@ -1,30 +1,25 @@
-import PropTypes from 'prop-types';
+import axios from "axios"
+import { useNavigate } from "react-router-dom"
 
+const EliminarProyecto = ({ id, onDelete }) => {
+  const navigate = useNavigate()
 
+  const EliminarProyecto = async () => {
+    const confirmed = window.confirm("¿Quieres eliminar este proyecto?")
 
+    if (confirmed) {
+      await axios.delete(`http://localhost:8080/api/v1/portafolio${id}`)
+      onDelete()
+      navigate("/")
+    }
+  }
 
-const EliminarProyecto = ({ proyecto, onDelete }) => {
-    const handleEliminarClick = () => {
-      onDelete(proyecto.id);
-    };
-  
-    return (
-      <div>
-        <h3>Eliminar Proyecto</h3>
-        <p>¿Estás seguro de que deseas eliminar el proyecto {proyecto.nombre}?</p>
-        <button onClick={handleEliminarClick}>Eliminar</button>
-      </div>
-    );
-  };
-  
-  EliminarProyecto.propTypes = {
-    proyecto: PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      nombre: PropTypes.string,
-      // ...
-    }).isRequired,
-    onDelete: PropTypes.func.isRequired,
-  };
+  return (
+    <div className="delete">
+      <button onClick={EliminarProyecto}>Eliminar proyecto</button>
+    </div>
+  )
+}
 
   export default EliminarProyecto;
 

@@ -6,7 +6,7 @@ import EliminarProyecto from "./EliminarProyecto"
 
 const url = 'http://localhost:8080/api/v1/portafolio'
 const Proyectos = () => {
-    const [Proyectos, setProyectos] = useState([])
+    const [proyectos, setProyectos] = useState([])
     
     useEffect( () => {
         getAllProyectos()
@@ -24,22 +24,18 @@ const Proyectos = () => {
 
 return (
     <div className="container">
-        <div>
-            <NavLink to="/create"><button className="btn btn-primary">Create</button></NavLink>
-
-        </div>
         {
-            Proyectos.map((Proyecto) => (
-                <div key={Proyecto.id} className="form">
-                    <NavLink to={`/edit/${Proyecto.id}`}><button>edit</button></NavLink>
-                    <h2 >{Proyecto.name}</h2>
-                    <p>{Proyecto.description}</p>
-                    <img src={Proyecto.img} alt="" className="img"/>
-                    <p>{Proyecto.repositorio}</p>
-                    <p>{Proyecto.colaboradores}</p>
-                    <p>{Proyecto.tecnologias}</p>
-
-                    <EliminarProyecto id={Proyecto.id} onDelete={getAllProyectos} />
+            proyectos.map((proyecto) => (
+                <div key={proyecto.id} className="form">
+                    <h2 >{proyecto.nombre}</h2>
+                    <p>{proyecto.description}</p>
+                    <img src={proyecto.img} alt="" className="img"/>
+                    <p>{proyecto.repositorio}</p>
+                    <p>{proyecto.colaboradores}</p>
+                    <p>{proyecto.tecnologias}</p>
+                    <NavLink to="/create"><button className="btn-primary">Create</button></NavLink>
+                    <NavLink to={`/edit/${proyecto.id}`}><button>edit</button></NavLink>
+                    <EliminarProyecto id={proyecto.id} onDelete={getAllProyectos} />
 
                 </div>
             ))

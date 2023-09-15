@@ -1,0 +1,6 @@
+body {
+  background-image: url("src/components/img/001.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; /* Centra la imagen tanto horizontal como verticalmente */
+}

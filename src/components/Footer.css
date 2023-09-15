@@ -1,0 +1,59 @@
+body {
+  position: relative;
+  min-height: 100vh; /* Establece la altura mínima de la página completa */
+  margin: 0;
+  padding-bottom: 1rem; /* Asegurar que el contenido no se superponga al footer */
+}/* Estilos generales para el footer */
+
+/* Estilos para el contenedor del logo y los iconos */
+.footer {
+  display: flex;
+  background-color: #552e66; /* Color de fondo del footer */
+  color: #28c7d4; /* Color del texto en el footer */
+  padding: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos para el logo */
+.footer-logo img {
+  width: 80px; /* Ancho del logo */
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-icons a {
+  font-size: 20px; /* Tamaño de los iconos */
+  color: #28c7d4; /* Color de los iconos */
+  text-decoration: none; /* Quitar subrayado de los enlaces */
+  transition: color 0.3s ease; /* Transición suave al pasar el mouse por encima */
+}
+
+.social-icons a:hover {
+  color: #0077B5; /* Cambiar el color al pasar el mouse por encima del icono de LinkedIn */
+}
+
+/* Estilos para el texto de derechos de autor */
+footer p {
+  margin-top: 10px; /* Espaciado superior del texto de derechos de autor */
+  font-size: 12;
+}
+
+.name-email {
+  display: flex;
+  flex-direction: column;
+}
+
+footer p a {
+  color: #4dd33e; /* Cambiar el color del enlace de correo a rojo, por ejemplo */
+  text-decoration: none; /* Quitar subrayado del enlace */
+}
+
+footer p a:hover {
+  color: #f5bc62; /* Cambiar el color al pasar el mouse por encima */
+}
+
+/* Estilos para el contenido principal de la página */
+.main-content {
+  flex-grow: 1;
+}
+  

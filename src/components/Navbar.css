@@ -1,0 +1,33 @@
+.navbar {
+    display: flex;
+    background-color: #552e66;
+    color: #28c7d4;
+    padding: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-logo img {
+    height: 80px;
+  }
+  
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    margin-right: 100px;
+  }
+  
+  .navbar-item a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #28c7d4;
+    font-weight: bold;
+    }
+  .navbar-item a:hover {
+      color: #0077B5;
+      text-decoration: underline;
+  }
