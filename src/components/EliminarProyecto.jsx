@@ -1,5 +1,6 @@
 import axios from "axios";
 
+
 const EliminarProyecto = ({ id, onDelete }) => {
   const eliminarProyecto = async () => {
     try {
@@ -7,6 +8,7 @@ const EliminarProyecto = ({ id, onDelete }) => {
       await axios.delete(`http://localhost:8080/api/v1/portafolio/${id}`);
       // Llamar a la función onDelete para actualizar la lista de proyectos
       onDelete();
+      navigate("/proyectos");
     } catch (error) {
       console.error("Error al eliminar el proyecto:", error);
     }
