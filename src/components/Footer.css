@@ -1,23 +1,20 @@
-body {
-  position: relative;
-  min-height: 100vh; /* Establece la altura mínima de la página completa */
-  margin: 0;
-  padding-bottom: 1rem; /* Asegurar que el contenido no se superponga al footer */
-}/* Estilos generales para el footer */
 
-/* Estilos para el contenedor del logo y los iconos */
 .footer {
   display: flex;
-  background-color: #552e66; /* Color de fondo del footer */
+  flex-direction: column;
+  background-color: transparent; /* Color de fondo del footer */
   color: #28c7d4; /* Color del texto en el footer */
   padding: 0.5rem;
-  justify-content: space-between;
+  justify-content:center;
   align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%; /* Asegura que la barra de navegación tenga el ancho completo */
 }
 
 /* Estilos para el logo */
 .footer-logo img {
-  width: 80px; /* Ancho del logo */
+  width: 100px; /* Ancho del logo */
 }
 
 /* Estilos para los iconos de redes sociales */
@@ -26,6 +23,7 @@ body {
   color: #28c7d4; /* Color de los iconos */
   text-decoration: none; /* Quitar subrayado de los enlaces */
   transition: color 0.3s ease; /* Transición suave al pasar el mouse por encima */
+  margin-bottom: 5px;
 }
 
 .social-icons a:hover {
@@ -34,16 +32,23 @@ body {
 
 /* Estilos para el texto de derechos de autor */
 footer p {
-  margin-top: 10px; /* Espaciado superior del texto de derechos de autor */
-  font-size: 12;
+  margin-top: 5px; /* Espaciado superior del texto de derechos de autor */
+  font-size: 10;
+  margin-bottom: 5px;
 }
 
 .name-email {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 footer p a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #4dd33e; /* Cambiar el color del enlace de correo a rojo, por ejemplo */
   text-decoration: none; /* Quitar subrayado del enlace */
 }
@@ -51,9 +56,3 @@ footer p a {
 footer p a:hover {
   color: #f5bc62; /* Cambiar el color al pasar el mouse por encima */
 }
-
-/* Estilos para el contenido principal de la página */
-.main-content {
-  flex-grow: 1;
-}
-  

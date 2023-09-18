@@ -1,0 +1,52 @@
+/* Estilos para el contenedor principal */
+.editarProyecto {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #5a1783;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para el encabezado */
+  .editarProyecto h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #4dd33e;
+  }
+  
+  /* Estilos para los campos de entrada y etiquetas */
+  .editarProyecto label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .editarProyecto input[type="text"],
+  .editarProyecto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Estilos para el botón de editar */
+  .editarProyecto button[type="editar"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4dd33e;
+    color: #000101;
+    border: none;
+    border-radius: 3px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .editarProyecto button[type="editar"]:hover {
+    background-color: #4bb8be;
+  }
+  

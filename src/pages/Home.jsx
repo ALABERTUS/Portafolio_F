@@ -1,13 +1,11 @@
 
-import Disposicion from '../disposicion/disposicion'
+import Disposicion from '../disposicion/Disposicion.jsx'
 import '../pages/home.css'
 
 const Home = () => {
   return (
     <div>
-      <p>CACA DE LA VACA</p>
       <Disposicion />
-      
     </div>
   )
 }

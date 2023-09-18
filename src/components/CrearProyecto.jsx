@@ -17,19 +17,19 @@ const CrearProyecto = () => {
     const store = async (e) => {
         e.preventDefault();
         await axios.post(url, {
-            name: nombre,
-            description: descripcion, 
+            nombre: nombre,
+            descripcion: descripcion, 
             img: img,
             repositorio: repositorio, 
-            collaboradores: colaboradores,
-            technologias: tecnologias,
+            colaboradores: colaboradores,
+            tecnologias: tecnologias,
         })
-        navigate("/")
+        navigate("/proyectos")
     } 
 
 return (
     <div>
-        <h3>Create</h3>
+        <h3>Crear Nuevo Proyecto</h3>
         <form onSubmit={store}>
             <div>
                 <label>nombre</label>
@@ -79,7 +79,7 @@ return (
                     onChange={(e) => setTecnologias(e.target.value)}
                 />
             </div>
-            <button type="submit">Save</button>
+            <button type="submit">Crear Proyecto</button>
         </form>
     </div>
 )

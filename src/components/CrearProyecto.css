@@ -1,0 +1,55 @@
+/* Estilos para el contenedor principal */
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el encabezado */
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgb(40, 247, 88); /* Cambiar el color del texto del encabezado a gris oscuro */
+}
+
+/* Estilos para los campos de entrada y etiquetas */
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  color: rgb(40, 247, 88); /* Cambiar el color del texto de las etiquetas a gris medio */
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #444; /* Cambiar el color del texto de los campos de entrada a gris un poco más oscuro */
+}
+
+/* Estilos para el botón de guardar */
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #a1c6ed;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+  

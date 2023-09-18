@@ -2,7 +2,7 @@ import {createBrowserRouter} from "react-router-dom";
 import Home from "../pages/Home";
 import Proyectos from "../components/Proyectos";
 import CrearProyecto from "../components/CrearProyecto";
-import EditarProyecto from "../components/EditarProyecto";
+import EditarProyecto from "../components/EditarProyecto.jsx"
 import EliminarProyecto from "../components/EliminarProyecto";
 import AcercaDeMi from "../components/AcercaDeMi";
 import Contacto from "../components/Contacto.jsx";
@@ -18,7 +18,7 @@ export const router = createBrowserRouter([
                 element: <Proyectos/>
             },
             {
-                path: "/crearProyecto",
+                path: "/crear",
                 element: <CrearProyecto/>
             },
             {

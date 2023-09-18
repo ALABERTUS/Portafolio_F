@@ -1,25 +1,24 @@
-import axios from "axios"
-import { useNavigate } from "react-router-dom"
+import axios from "axios";
 
 const EliminarProyecto = ({ id, onDelete }) => {
-  const navigate = useNavigate()
-
-  const EliminarProyecto = async () => {
-    const confirmed = window.confirm("¿Quieres eliminar este proyecto?")
-
-    if (confirmed) {
-      await axios.delete(`http://localhost:8080/api/v1/portafolio${id}`)
-      onDelete()
-      navigate("/")
+  const eliminarProyecto = async () => {
+    try {
+      // Realizar una solicitud DELETE al servidor para eliminar el proyecto
+      await axios.delete(`http://localhost:8080/api/v1/portafolio/${id}`);
+      // Llamar a la función onDelete para actualizar la lista de proyectos
+      onDelete();
+    } catch (error) {
+      console.error("Error al eliminar el proyecto:", error);
     }
-  }
+  };
 
   return (
-    <div className="delete">
-      <button onClick={EliminarProyecto}>Eliminar proyecto</button>
+    <div>
+      <button onClick={eliminarProyecto}className="delete-button">Eliminar Proyecto</button>
     </div>
-  )
-}
+  );
+};
 
-  export default EliminarProyecto;
+export default EliminarProyecto;
+
 

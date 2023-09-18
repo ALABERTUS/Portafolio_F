@@ -3,10 +3,10 @@ import './AcercaDeMi.css';
 
 function AcercaDeMi() {
   return (
-    <div>
+    <div className='acerca-de-mi'>
       <h1>Acerca de Mí</h1>
       <h3>Albert Cortes Ventura</h3>
-      <h2>Junior Full Stack Developer</h2>
+      <h3>Junior Full Stack Developer</h3>
       
       <h2>Conocimientos</h2>
       <ul>

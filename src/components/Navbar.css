@@ -1,14 +1,20 @@
 .navbar {
     display: flex;
-    background-color: #552e66;
+    flex-direction: column;
+    background-color:transparent;
     color: #28c7d4;
     padding: 0.5rem;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; /* Añade un valor z-index para superponer la barra de navegación sobre el contenido */
   }
   
   .navbar-logo img {
-    height: 80px;
+    height: 100px;
   }
   
   .navbar-links {
@@ -18,7 +24,7 @@
     list-style: none;
     display: flex;
     gap: 0.5rem;
-    margin-right: 100px;
+    margin-right: 62px;
   }
   
   .navbar-item a {

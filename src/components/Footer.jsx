@@ -13,7 +13,7 @@ function Footer() {
   return (
       <footer className="footer">
         <div className="footer-logo">
-          <img src="src\components\img\Albert Cortes 1.png" alt="Logo" />
+          <img src="src/components/img/Albert Cortes(2).png" alt="Logo" />
         </div>
         <div>
         <p>&copy; 2023 Albert Cortés Ventura</p>
