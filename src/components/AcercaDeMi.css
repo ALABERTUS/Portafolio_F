@@ -1,0 +1,50 @@
+.acerca-de-mi {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Establece un ancho máximo para evitar que el contenido se extienda demasiado en pantallas grandes */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: yellow;
+}
+
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 20px; /* Agrega margen inferior para separar las listas */
+  columns: 3; /* Divide las listas en dos columnas */
+  column-gap: 20px; /* Espaciado entre las columnas */
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  ul {
+    columns: 1; /* Cambia a una sola columna en pantallas pequeñas */
+  }
+}
+
+  

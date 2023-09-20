@@ -1,0 +1,46 @@
+.contacto {
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centrar el formulario en la página */
+    padding: 20px;
+  }
+  
+  .contacto h1 {
+    font-size: 24px; /* Tamaño del encabezado */
+    margin-bottom: 20px; /* Espaciado inferior del encabezado */
+  }
+  
+  .campo {
+    margin-bottom: 20px; /* Espaciado inferior entre los campos */
+  }
+  
+  label {
+    display: block; /* Hacer que las etiquetas ocupen toda la línea */
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%; /* Ancho completo del campo */
+    padding: 10px; /* Espaciado interior del campo */
+    border: 1px solid #ccc; /* Borde del campo */
+    border-radius: 4px; /* Bordes redondeados */
+  }
+  
+  textarea {
+    min-height: 150px; /* Altura mínima del campo de texto */
+  }
+  
+  button {
+    background-color: #0077B5; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interior del botón */
+    border: none; /* Quitar el borde del botón */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse por encima */
+  }
+  
+  button:hover {
+    background-color: #005B8B; /* Cambiar el color de fondo al pasar el mouse por encima */
+  }
+  

@@ -1,0 +1,55 @@
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent; /* Color de fondo del footer */
+  color: #28c7d4; /* Color del texto en el footer */
+  padding: 0.5rem;
+  justify-content:center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%; /* Asegura que la barra de navegación tenga el ancho completo */
+}
+
+.footer-logo img {
+  width: 100px;
+}
+
+.social-icons a {
+  font-size: 20px; /* Tamaño de los iconos */
+  color: #28c7d4; /* Color de los iconos */
+  text-decoration: none; /* Quitar subrayado de los enlaces */
+  transition: color 0.3s ease; /* Transición suave al pasar el mouse por encima */
+  margin-bottom: 5px;
+}
+
+.social-icons a:hover {
+  color: #0077B5; /* Cambiar el color al pasar el mouse por encima del icono de LinkedIn */
+}
+
+footer p {
+  margin-top: 5px;
+  font-size: 10;
+  margin-bottom: 5px;
+}
+
+.name-email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+footer p a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #4dd33e; 
+  text-decoration: none; /* Quitar subrayado del enlace */
+}
+
+footer p a:hover {
+  color: #f5bc62; /* Cambiar el color al pasar el mouse por encima */
+}
