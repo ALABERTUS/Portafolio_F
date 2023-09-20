@@ -28,14 +28,12 @@ function AcercaDeMi() {
         <li>Pensamiento Creativo</li>
         <li>Trabajo en Equipo</li>
         <li>Liderazgo</li>
-        {/* Agrega tus soft skills aquí */}
       </ul>
       <h2>Otras Habilidades</h2>
       <ul>
         <li>Hardware</li>
         <li>Electronica</li>
         <li>Electricidad </li>
-        {/* Agrega tus habilidades aquí */}
       </ul>
     </div>
   );

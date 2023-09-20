@@ -1,8 +1,5 @@
-/* src/components/AcercaDeMi.css */
-
-/* Estilos para el contenedor principal */
 .acerca-de-mi {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -11,27 +8,26 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: rgb(40, 247, 88);
+  color: yellow;
 }
 
-/* Estilos para los encabezados */
+
 h1 {
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
 h2 {
   font-size: 18px;
-  margin-top: 20px;
-  margin-bottom: 10px; /* Agrega margen inferior para separar las secciones */
-}
-
-h3 {
-  font-size: 20px;
+  margin-top: 25px;
   margin-bottom: 10px;
 }
 
-/* Estilos para las listas */
+h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
 ul {
   list-style-type: disc;
   margin-left: 20px;
@@ -41,11 +37,10 @@ ul {
 }
 
 li {
-  font-size: 15px;
+  font-size: 20px;
   margin-bottom: 5px;
 }
 
-/* Estilos para hacer responsive */
 @media (max-width: 768px) {
   ul {
     columns: 1; /* Cambia a una sola columna en pantallas pequeñas */

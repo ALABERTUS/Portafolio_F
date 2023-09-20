@@ -1,11 +1,10 @@
 body {
     position: relative;
-    min-height: 100vh; /* Establece la altura mínima de la página completa */
+    min-height: 96vh; /* Establece la altura mínima de la página completa */
     margin: 0;
     padding-bottom: 1rem; /* Asegurar que el contenido no se superponga al footer */
-  }/* Estilos generales para el footer */
+  }
 
-/* Estilos generales para la página */
 .disposicion {
     display: flex;
     flex-direction: column;
@@ -13,22 +12,19 @@ body {
     padding: 20px;
   }
   
-  /* Estilos para la barra de navegación */
-  /* Asegúrate de aplicar los estilos adecuados para Navbar según tus necesidades */
-  
-  /* Estilos para el contenido principal */
   main {
     flex-grow: 1;
     width: 100%;
     max-width: 800px; /* Ancho máximo para el contenido principal */
     margin-top: 275px; /* Puedes ajustar esta cantidad según tus necesidades */
-    margin-bottom: 200px; /* Espacio entre el contenido y el footer */
+    margin-bottom: 10px; /* Espacio entre el contenido y el footer */
     flex-grow: 1;
   }
-  
-  /* Estilos para el footer */
-  /* Asegúrate de aplicar los estilos adecuados para Footer según tus necesidades */
-  
+  .titulos {
+    font-size:px;
+    color: yellow;
+  }
+
   /* Media queries para hacer que el diseño sea responsive */
   @media (max-width: 768px) {
     .disposicion {

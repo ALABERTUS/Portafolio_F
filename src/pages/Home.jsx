@@ -1,6 +1,6 @@
-
 import Disposicion from '../disposicion/Disposicion.jsx'
 import '../pages/home.css'
+
 
 const Home = () => {
   return (

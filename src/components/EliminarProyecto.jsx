@@ -1,7 +1,15 @@
 import axios from "axios";
-
+import { useNavigate } from "react-router-dom";
 
 const EliminarProyecto = ({ id, onDelete }) => {
+  const navigate = useNavigate();
+
+  const confirmarEliminar = () => {
+    if (window.confirm("¿Estás seguro de que deseas eliminar este proyecto?")) {
+      eliminarProyecto();
+    }
+  };
+
   const eliminarProyecto = async () => {
     try {
       // Realizar una solicitud DELETE al servidor para eliminar el proyecto
@@ -16,11 +24,10 @@ const EliminarProyecto = ({ id, onDelete }) => {
 
   return (
     <div>
-      <button onClick={eliminarProyecto}className="delete-button">Eliminar Proyecto</button>
+      <button onClick={confirmarEliminar} className="delete-button">Eliminar Proyecto</button>
     </div>
   );
 };
 
 export default EliminarProyecto;
-
 

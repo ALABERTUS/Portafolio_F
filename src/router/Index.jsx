@@ -6,6 +6,7 @@ import EditarProyecto from "../components/EditarProyecto.jsx"
 import EliminarProyecto from "../components/EliminarProyecto";
 import AcercaDeMi from "../components/AcercaDeMi";
 import Contacto from "../components/Contacto.jsx";
+import TextosAlternativos from "../components/TextosAlternativos";
 
 
 export const router = createBrowserRouter([
@@ -37,10 +38,13 @@ export const router = createBrowserRouter([
                 path: "/contacto",
                 element: <Contacto/>
             },
+            {
+                path: "/textos",
+                element: <TextosAlternativos/>
+            },
             
         ]
     }
- 
 ]);
 
 

@@ -1,11 +1,11 @@
 
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import "./Navbar.css";
 function Navbar () {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src="src/components/img/Albert Cortes.png" alt="Logo" />
+      <Link to="/"> <img src="src/components/img/Albert Cortes.png" alt="Logo" /> </Link>
       </div>
       <ul className="navbar-links">
         <li className="navbar-item">

@@ -7,7 +7,7 @@ function Contacto() {
   const [correo, setCorreo] = useState('');
   const [mensaje, setMensaje] = useState('');
 
-  // Función para manejar el envío del formulario
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Nombre:', nombre);
@@ -30,7 +30,7 @@ function Contacto() {
           />
         </div>
         <div className="campo">
-          <label htmlFor="correo">Correo Electrónico:</label>
+          <label htmlFor="alabertus@gmail.com">:</label>
           <input
             type="email"
             id="correo"
