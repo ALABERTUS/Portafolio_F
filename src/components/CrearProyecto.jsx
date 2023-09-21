@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const url = 'http://localhost:8080/api/v1/portafolio'
+const url = 'https://portafoliob-production.up.railway.app/api/v1/portafolio'
 
 const CrearProyecto = () => {
     

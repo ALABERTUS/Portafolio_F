@@ -5,7 +5,7 @@ import './Proyecto.css'
 import './CrearProyecto.css'
 import EliminarProyecto from "./EliminarProyecto"
 
-const url = 'http://localhost:8080/api/v1/portafolio'
+const url = 'https://portafoliob-production.up.railway.app/api/v1/portafolio'
 const Proyectos = () => {
     const [proyectos, setProyectos] = useState([])
     

@@ -4,7 +4,7 @@ import { useState } from "react"
 import './EditarProyecto.css'
 import { useNavigate, useParams } from "react-router-dom"
 
-const url = 'http://localhost:8080/api/v1/portafolio'
+const url = 'https://portafoliob-production.up.railway.app/api/v1/portafolio'
 
 const EditarProyecto = () => {
 
