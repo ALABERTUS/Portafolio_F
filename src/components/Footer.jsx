@@ -13,7 +13,7 @@ function Footer() {
   return (
       <footer className="footer">
         <div className="footer-logo">
-        <Link to="/"><img src="public/img/Albert Cortes(2).png" alt="Logo" /></Link>
+        <Link to="/"><img src="public/img/Albert_Cortes(2).png" alt="Logo" /></Link>
         </div>
         <div>
         <p>&copy; 2023 Albert Cortés Ventura</p>
