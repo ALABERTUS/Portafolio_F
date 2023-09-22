@@ -2,6 +2,7 @@ import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
+import Albert1 from '../assets/img/Albert_Cortes(2).png';
 
 function Footer() {
   const facebookLink = 'https://www.facebook.com/TuPagina';
@@ -13,7 +14,7 @@ function Footer() {
   return (
       <footer className="footer">
         <div className="footer-logo">
-        <Link to="/"><img src="public/img/Albert_Cortes(2).png" alt="Logo" /></Link>
+        <Link to="/"><img src={Albert1} alt="Logo" /></Link>
         </div>
         <div>
         <p>&copy; 2023 Albert Cortés Ventura</p>
