@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -10,12 +11,19 @@
 
 /* Estilos para cada proyecto */
 .form {
-  border: 1px solid #ddd;
+  border: 1px solid #f90909;
   padding: 20px;
   width: 100%;
-  background-color: #5094be;
+  background-color: rgba(0, 0, 0, 0.2);
   margin-bottom: 20px; /* Espacio entre proyectos */
 }
+
+h2 {
+  color: #fff;
+}
+
+p {
+  color: #fff;}
 
 .edit-button{
   background-color: #2f6e6a;
@@ -46,7 +54,7 @@ button.delete-button:hover {
 }
 
 .crearProyecto button {
-  background-color: #020202;
+  background-color: #f90909;
   color: #fff;
   border: none;
   padding: 10px 20px;
